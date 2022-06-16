@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>task</title>
+</head>
+
+<body class="bg-slate-200">
+    <!-- left screen design -->
+    <div class="flex justify-center">
+        <!--===== banner =========== -->
+        <div class="w-[428px] bg-white shadow-xl my-7">
+            <div class="w-[428px] h-[178px] bg-[#2484C2] text-white">
+                <!-- top section -->
+                <div class="flex justify-between pt-[12px] px-[24px]">
+                    <p class="font-[15px]">9:41</p>
+                    <div class="flex">
+                        <i class="uil uil-signal ml-2 h-3"></i>
+                        <i class="uil uil-wifi ml-2 h-3"></i>
+                        <i class="uil uil-battery-empty ml-2 h-3"></i>
+                    </div>
+                </div>
+                <!-- menu section -->
+                <div class="">
+                    <div class="my-7 px-6 flex justify-between">
+                        <div class="flex">
+                            <i class="uil uil-bars text-2xl mr-2"></i>
+                            <div class="flex items-center">
+                                <div class="relative mr-2">
+                                    <div class="h-8 w-8 bg-white rounded-full "></div>
+                                    <div class="h-4 w-4 bg-blue-500 rounded-full absolute top-[8px] left-[8px] z-10">
+                                    </div>
+                                    <div class="h-2.5 w-2.5 bg-white rounded-full absolute top-[11px] left-[11px] z-10">
+                                    </div>
+                                </div>
+                                <h2 class="text-lg font-semibold">CLICON</h2>
+                            </div>
+                        </div>
+                        <i class="uil uil-bell text-lg"></i>
+                    </div>
+                </div>
+                <!--===== profile =========== -->
+                <div class="w-[380px] h-[112px] bg-white shadow-xl rounded-md flex items-center mx-auto mb-20">
+                    <div class="flex items-center">
+                        <img src="assets/images/profile-img.jpg" class="h-[72px] w-[72px] rounded-full mx-4" alt="">
+                        <div>
+                            <h2 class="text-lg font-bold text-black">Kevin Gilbert</h2>
+                            <p class="text-sm text-[#191C1F] mt-2">kevin.gilbert@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--===== menu items =========== -->
+            <div class="my-28 px-6">
+                <ul>
+                    <li class="mb-6">
+                        <a class="flex items-center" href="#">
+                            <i class="uil uil-create-dashboard text-xl mr-1"></i>
+                            <span class="text-sm">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a class="flex items-center" href="#">
+                            <i class="uil uil-store text-xl mr-1"></i>
+                            <span class="text-sm">Order History</span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a class="flex items-center" href="#">
+                            <i class="uil uil-location-pin-alt text-xl mr-1"></i>
+                            <span class="text-sm">Track Order</span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a class="flex items-center" href="#">
+                            <i class="uil uil-shopping-cart text-xl mr-1"></i>
+                            <span class="text-sm">Shopping Cart</span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a class="flex items-center" href="#">
+                            <i class="uil uil-heart text-xl mr-1"></i>
+                            <span class="text-sm">Wishlist</span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a class="flex items-center" href="#">
+                            <i class="uil uil-check text-xl mr-1"></i>
+                            <span class="text-sm">Compare</span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a class="flex items-center" href="#">
+                            <i class="uil uil-postcard text-xl mr-1"></i>
+                            <span class="text-sm">Cards & Address</span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a class="flex items-center" href="#">
+                            <i class="uil uil-history text-xl mr-1"></i>
+                            <span class="text-sm">Browsing History</span>
+                        </a>
+                    </li>
+                    <li class="mb-6">
+                        <a class="flex items-center" href="#">
+                            <i class="uil uil-setting text-xl mr-1"></i>
+                            <span class="text-sm">Setting</span>
+                        </a>
+                    </li>
+                    <hr class="w-full mb-4">
+                    <li class="mb-6">
+                        <a class="flex items-center" href="#">
+                            <i class="uil uil-signout text-xl mr-1"></i>
+                            <span class="text-sm">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- bottom-menubar -->
+            <div class="grid grid-cols-5 gap-2 px-6 border-t-[1px] pt-2">
+                <a class="text-center mx-auto" href="#">
+                    <i class="uil uil-estate text-2xl"></i>
+                    <p class="text-xs">Home</p>
+                </a>
+                <a class="text-center mx-auto" href="#">
+                    <i class="uil uil-search text-2xl"></i>
+                    <p class="text-xs">Browse</p>
+                </a>
+                <a class="text-center mx-auto" href="#">
+                    <i class="uil uil-shopping-cart text-2xl"></i>
+                    <p class="text-xs">Cart (03)</p>
+                </a>
+                <a class="text-center mx-auto" href="#">
+                    <i class="uil uil-location-pin-alt text-2xl"></i>
+                    <p class="text-xs">Track order</p>
+                </a>
+                <a class="text-center mx-auto my-[-20px]" href="#">
+                    <div class="bg-[#FA8232] rounded-full h-12 w-12 text-center pt-1.5">
+                        <i class="uil uil-user-square text-2xl"></i>
+                    </div>
+                    <p class="text-xs">Account</p>
+                </a>
+            </div>
+            <!-- button -->
+            <div class=" flex justify-center mb-2 mt-4">
+                <div class="w-32 h-1.5 bg-black rounded-full"></div>
+            </div>
+
+        </div>
+
+
+
+        <div></div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
